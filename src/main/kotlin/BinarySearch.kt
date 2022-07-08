@@ -1,7 +1,7 @@
-class BinarySearch(private val list: List<Int>, private val item: Int) {
+class BinarySearch(private val list: Array<Int>, private val item: Int) {
     fun execute(): String {
         var lowElement = 0
-        var highElement = list.size - 1
+        var highElement = list.size
         while (lowElement <= highElement) {
 
             val midElement = (lowElement + highElement) / 2
