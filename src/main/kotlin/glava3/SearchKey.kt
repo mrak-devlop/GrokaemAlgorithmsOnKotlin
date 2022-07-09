@@ -7,7 +7,7 @@ class SearchKey() {
           if (item = "box" ){
               lookForKey(item)
           } else
-              item = "Key"
+              item = "key"
       }
     }
 }
