@@ -1,13 +1,14 @@
 package glava3
 
 class SearchKey() {
-    lateinit var item: String
-    fun lookForKey(box: String){
-      while (item = "key"){
-          if (item = "box" ){
-              lookForKey(item)
+
+    fun lookForKey(item: String){
+        var items = item
+      while (items == "key"){
+          if (items == "box" ){
+              lookForKey(items)
           } else
-              item = "key"
+              items = "key"
       }
     }
 }
