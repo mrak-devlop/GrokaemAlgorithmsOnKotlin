@@ -1,3 +1,5 @@
+package glava2
+
 class SelectionSort(private val array: Array<Int>) {
 
     fun execute(): Array<Int> {
