@@ -1,13 +1,13 @@
 class SelectionSort(private val array: Array<Int>) {
 
     fun execute(): Array<Int> {
-        val buferArray = array.toMutableList()
+        val bufferArray = array.toMutableList()
         val completeArray = mutableListOf<Int>()
 
         for (index in array){
-            val minElement = buferArray.min()
+            val minElement = bufferArray.min()
             completeArray.add(minElement)
-            buferArray.remove(minElement)
+            bufferArray.remove(minElement)
         }
 
         return completeArray.toTypedArray()
