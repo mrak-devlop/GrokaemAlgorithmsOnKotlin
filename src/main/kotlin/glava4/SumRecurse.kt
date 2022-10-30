@@ -1,20 +1,19 @@
 package glava4
 
 fun main(){
-    val arr = arrayOf(2,4,6)
-    val length = arr.size-1
-    print(sum(arr,length))
+    val arr = mutableListOf(2,4,6)
+    print(sum(arr))
 }
 
-
-    fun sum(array: Array<Int>, length: Int): Int {
-        if (length < 0){
-            return 0
-        } else {
-            val lists = array
-            return array[length] + sum(lists, length - 1)
-        }
-
+fun sum(array: MutableList<Int>, ): Int {
+    if (array.isEmpty()){
+        return 0
+    } else {
+        val number = array[0]
+        array.removeAt(0)
+        return number + sum(array)
     }
+
+}
 
 
